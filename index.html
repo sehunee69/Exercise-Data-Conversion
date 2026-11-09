@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSV to JSON</title>
+
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 10px 20px;
+    }
+
+    pre {
+      font-family: monospace;
+      background: #f4f4f4;
+      padding: 10px;
+      max-height: 400px;
+      overflow: auto;
+      white-space: pre-wrap;
+    }
+
+    .row {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .error {
+      color: #b00020;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Keanu Riel B. Ensomo</h1>
+  <h3><em>IT 3206N Grp. 1 MW 6:00-8:30PM</em></h3>
+
+  <h1>CSV to JSON</h1>
+
+  <h2>1. Upload CSV</h2>
+  <div class="row">
+    <input type="file" id="csvFile" accept=".csv">
+    <button id="convertBtn">Convert CSV to JSON</button>
+  </div>
+
+  <h2>2. JSON Display</h2>
+  <pre id="output">Upload a CSV file and click Convert CSV to JSON.</pre>
+
+  <script src="server.js"></script>
+</body>
+</html>
